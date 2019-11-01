@@ -57,7 +57,8 @@ class App extends React.Component {
 render() {  
   return (
     <div> 
-      <h2>Counter</h2>
+      <h2 data-testid="counterid"
+      >Counter</h2>
       <Display balls={this.state.balls} strikes={this.state.strikes}/>
       <Dashboard addStrike={this.addStrike} addBall={this.addBall} addFoul={this.addFoul} addClear={this.addClear}/>
     </div>
